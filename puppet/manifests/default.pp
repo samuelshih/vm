@@ -15,3 +15,9 @@ file { 'code directory':
   path => '/home/vagrant/code',
   ensure => directory
 }
+
+# redis
+
+class { 'redis':
+  version => '2.8.13',
+}
