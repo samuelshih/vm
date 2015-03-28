@@ -25,3 +25,10 @@ If you intend on using git from inside the VM, Make sure your ssh-agent is forwa
   * `vagrant status` will show the current VM status.
   * `vagrant provision` will redo the VM setup (without cloning the repositories OR creating databases).
   * `vagrant reload --provision` will force provision your VM.
+
+### Troubleshooting
+
+Port Conflicts
+
+  * `lsof -i :3000` Checks for current processes on 3000
+  * `kill -9 <PID>` Kill the process by PID
